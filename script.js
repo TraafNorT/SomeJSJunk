@@ -30,7 +30,7 @@ function draw() {
     dx = -dx
   }
   canvas.onclick = function() {
-    xmin = (document.documentElement.clientWidth/2) - (480/2);
+    xmin = (document.documentElement.clientWidth/2) - (canvas.width/2);
     if (event.clientX > x + xmin - 10 && event.clientX < x + xmin + 10 && event.clientY > y - 10 && event.clientY < y + 10) {
       if (dx < 0) {
         dx -= 0.5;
